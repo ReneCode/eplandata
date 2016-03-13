@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eplandata", "eplandata\eplandata.csproj", "{0060557E-37A1-4FB9-ACEB-437AEF379563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eplandata.Tests", "eplandata.Tests\eplandata.Tests.csproj", "{63D109E7-7D04-451C-9DAD-03335F393177}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{BAC8BFEA-1C52-4E1C-83DD-7BEA4365A0BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{7668A1BE-8F6D-4359-94F7-33C2E6C80EC1}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{BF1D87FD-8758-41A4-8857-7C079923D018}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\eplandata.json = PublishScripts\Templates\eplandata.json
+		PublishScripts\Templates\eplandata.param.dev.json = PublishScripts\Templates\eplandata.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0060557E-37A1-4FB9-ACEB-437AEF379563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0060557E-37A1-4FB9-ACEB-437AEF379563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0060557E-37A1-4FB9-ACEB-437AEF379563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0060557E-37A1-4FB9-ACEB-437AEF379563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D109E7-7D04-451C-9DAD-03335F393177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D109E7-7D04-451C-9DAD-03335F393177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D109E7-7D04-451C-9DAD-03335F393177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D109E7-7D04-451C-9DAD-03335F393177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7668A1BE-8F6D-4359-94F7-33C2E6C80EC1} = {BAC8BFEA-1C52-4E1C-83DD-7BEA4365A0BA}
+		{BF1D87FD-8758-41A4-8857-7C079923D018} = {BAC8BFEA-1C52-4E1C-83DD-7BEA4365A0BA}
+	EndGlobalSection
+EndGlobal
